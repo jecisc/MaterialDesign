@@ -1,0 +1,9 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'MaterialDesign',
+      #directory : 'src',
+      #platforms : [ #pharo ]
+    }
+  ]
+}
