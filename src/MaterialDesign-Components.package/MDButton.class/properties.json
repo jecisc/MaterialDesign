@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "CyrilFerlicot 8/8/2017 00:49",
+	"super" : "WAButtonTag",
+	"category" : "MaterialDesign-Components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MDButton",
+	"type" : "normal"
+}

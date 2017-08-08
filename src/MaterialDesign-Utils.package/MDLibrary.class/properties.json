@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAFileMetadataLibrary",
+	"category" : "MaterialDesign-Utils",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MDLibrary",
+	"type" : "normal"
+}
