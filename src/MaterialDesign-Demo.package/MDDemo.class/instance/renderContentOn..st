@@ -66,111 +66,99 @@ renderContentOn: html
         </fieldset>
 
         <fieldset>
-          <legend class="mdc-typography--title">Buttons CSS Only</legend>
-          <button class="mdc-button" data-demo-no-js>
-            Default
-          </button>
-          <button class="mdc-button mdc-button--raised" data-demo-no-js>
-            Raised
-          </button>
-          <button class="mdc-button mdc-button--dense" data-demo-no-js>
-            Dense Default
-          </button>
-          <button class="mdc-button mdc-button--raised mdc-button--dense" data-demo-no-js>
-            Dense Raised
-          </button>
-          <button class="mdc-button mdc-button--compact" data-demo-no-js>
-            Compact
-          </button>
-          <button class="mdc-button mdc-button--raised mdc-button--compact" data-demo-no-js>
-            Compact Raised
-          </button>
-          <button class="mdc-button mdc-button--primary" data-demo-no-js>
-            Default with Primary
-          </button>
-          <button class="mdc-button mdc-button--raised mdc-button--primary" data-demo-no-js>
-            Raised with Primary
-          </button>
-          <button class="mdc-button mdc-button--accent" data-demo-no-js>
-            Default with Accent
-          </button>
-          <button class="mdc-button mdc-button--raised mdc-button--accent" data-demo-no-js>
-            Raised with Accent
-          </button>
-          <div class="mdc-button mdc-button--raised" tabindex="0" role="button" data-demo-no-js>
-            Div
-          </div>
-        </fieldset>
-
-        <fieldset>
           <legend class="mdc-typography--title">Links with Button Style</legend>
-          <a href="/button.html" class="mdc-button">
-            Default
-          </a>
-          <a href="/button.html" class="mdc-button mdc-button--raised">
-            Raised
-          </a>
-          <a href="/button.html" class="mdc-button mdc-button--dense">
-            Dense Default
-          </a>
-          <a href="/button.html" class="mdc-button mdc-button--raised mdc-button--dense">
-            Dense Raised
-          </a>
-          <a href="/button.html" class="mdc-button mdc-button--compact">
-            Compact
-          </a>
-          <a href="/button.html" class="mdc-button mdc-button--raised mdc-button--compact">
-            Compact Raised
-          </a>
-          <a href="/button.html" class="mdc-button mdc-button--primary">
-            Default with Primary
-          </a>
-          <a href="/button.html" class="mdc-button mdc-button--raised mdc-button--primary">
-            Raised with Primary
-          </a>
-          <a href="/button.html" class="mdc-button mdc-button--accent">
-            Default with Accent
-          </a>
-          <a href="/button.html" class="mdc-button mdc-button--raised mdc-button--accent">
-            Raised with Accent
-          </a>
+'.
+	html mdAnchor
+		callback: [ Transcript crShow: 'Button clicked' ];
+		with: 'Default'.
+	html mdAnchor
+		callback: [ Transcript crShow: 'Button clicked' ];
+		raised;
+		with: 'Raised'.
+	html mdAnchor
+		callback: [ Transcript crShow: 'Button clicked' ];
+		dense;
+		with: 'Dense Default'.
+	html mdAnchor
+		callback: [ Transcript crShow: 'Button clicked' ];
+		raised;
+		dense;
+		with: 'Dense Raised'.
+	html mdAnchor
+		callback: [ Transcript crShow: 'Button clicked' ];
+		compact;
+		with: 'Compact'.
+	html mdAnchor
+		callback: [ Transcript crShow: 'Button clicked' ];
+		raised;
+		compact;
+		with: 'Compact Raised'.
+	html mdAnchor
+		callback: [ Transcript crShow: 'Button clicked' ];
+		primaryColor;
+		with: 'Default with Primary'.
+	html mdAnchor
+		callback: [ Transcript crShow: 'Button clicked' ];
+		raised;
+		primaryColor;
+		with: 'Raised with Primary'.
+	html mdButton
+		callback: [ Transcript crShow: 'Button clicked' ];
+		accentColor;
+		with: 'Default with Accent'.
+	html mdButton
+		callback: [ Transcript crShow: 'Button clicked' ];
+		raised;
+		accentColor;
+		with: 'Raised with Accent'.
+	html
+		html:
+			'
         </fieldset>
 
         <fieldset disabled>
-          <legend class="mdc-typography--title">Disabled</legend>
-          <button class="mdc-button">
-            Default
-          </button>
-          <button class="mdc-button mdc-button--raised">
-            Raised
-          </button>
-          <button class="mdc-button mdc-button--dense">
-            Dense Default
-          </button>
-          <button class="mdc-button mdc-button--raised mdc-button--dense">
-            Dense Raised
-          </button>
-          <button class="mdc-button mdc-button--compact">
-            Compact
-          </button>
-          <button class="mdc-button mdc-button--raised mdc-button--compact">
-            Compact Raised
-          </button>
-          <button class="mdc-button mdc-button--primary">
-            Default with Primary
-          </button>
-          <button class="mdc-button mdc-button--raised mdc-button--primary">
-            Raised with Primary
-          </button>
-          <button class="mdc-button mdc-button--accent">
-            Default with Accent
-          </button>
-          <button class="mdc-button mdc-button--raised mdc-button--accent">
-            Raised with Accent
-          </button>
-          <div class="mdc-button mdc-button--raised" tabindex="0" role="button">
-            Div
-          </div>
+          <legend class="mdc-typography--title">Disabled</legend>'.
+	html mdButton: 'Default'.
+	html mdButton
+		raised;
+		with: 'Raised'.
+	html mdButton
+		dense;
+		with: 'Dense Default'.
+	html mdButton
+		raised;
+		dense;
+		with: 'Dense Raised'.
+	html mdButton
+		compact;
+		with: 'Compact'.
+	html mdButton
+		raised;
+		compact;
+		with: 'Compact Raised'.
+	html mdButton
+		primaryColor;
+		with: 'Default with Primary'.
+	html mdButton
+		raised;
+		primaryColor;
+		with: 'Raised with Primary'.
+	html mdButton
+		accentColor;
+		with: 'Default with Accent'.
+	html mdButton
+		raised;
+		accentColor;
+		with: 'Raised with Accent'.
+	html div
+		class: #'mdc-button';
+		class: #'mdc-button--raised';
+		attributeAt: 'role' put: 'button';
+		tabIndex: 0;
+		with: 'Div'.
+	html
+		html:
+			'
         </fieldset>
       </section>
 
