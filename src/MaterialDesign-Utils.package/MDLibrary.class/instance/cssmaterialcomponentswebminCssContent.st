@@ -1,5 +1,5 @@
 uploaded
-materialcomponentswebminCssContent
+cssmaterialcomponentswebminCssContent
 	^ '/*!
  Material Components for the web
  Copyright (c) 2017 Google Inc.

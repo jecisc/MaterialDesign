@@ -1,3 +1,3 @@
 accessing
 selectorsToInclude
-	^ #(#materialcomponentswebminCss #materialcomponentswebminJs)
+	^ #(#cssmaterialcomponentswebminCss #jsmaterialcomponentswebminJs #iconsiconCss #polyfilldialogpolyfillminCss #polyfilldialogpolyfillminJs #fontsrobotoCss)
