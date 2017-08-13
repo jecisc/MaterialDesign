@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MDAbstractScreenDemo",
+	"category" : "MaterialDesign-Demo",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MDButtonsDemo",
+	"type" : "normal"
+}

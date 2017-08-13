@@ -4,12 +4,12 @@ iconsiconCssContent
   font-family: ''Material Icons'';
   font-style: normal;
   font-weight: 400;
-  src: url(/files/MDLLibrary/MaterialIconsRegular.eot);
+  src: url(/files/MDLibrary/icons/MaterialIconsRegular.eot);
   src: local(''Material Icons''), 
 		 local(''MaterialIcons-Regular''), 
-		 url(/files/MDLLibrary/MaterialIconsRegular.woff2) format(''woff2''),
-		 url(/files/MDLLibrary/MaterialIconsRegular.woff) format(''woff''),
-		 url(/files/MDLLibrary/MaterialIconsRegular.ttf) format(''truetype'');		
+		 url(/files/MDLibrary/icons/MaterialIconsRegular.woff2) format(''woff2''),
+		 url(/files/MDLibrary/icons/MaterialIconsRegular.woff) format(''woff''),
+		 url(/files/MDLibrary/icons/MaterialIconsRegular.ttf) format(''truetype'');		
 }
 
 .material-icons {
