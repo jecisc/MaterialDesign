@@ -1,0 +1,3 @@
+accessing
+specificName
+	^ self subclassResponsibility

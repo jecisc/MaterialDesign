@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MDAbstractToolbarScreenDemo",
+	"category" : "MaterialDesign-Demo",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MDDefaultToolbarScreenDemo",
+	"type" : "normal"
+}

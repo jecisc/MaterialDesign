@@ -1,7 +1,9 @@
 rendering
 renderHeroContentOn: html
+
 	html mdButton: 'Flat'.
-	^ html mdButton
+	
+	html mdButton
 		raised;
 		primaryColor;
 		with: 'Raised'

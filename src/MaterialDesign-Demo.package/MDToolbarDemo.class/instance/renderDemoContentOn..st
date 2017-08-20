@@ -1,19 +1,9 @@
 rendering
-renderContentOn: html
+renderDemoContentOn: html
+	self flag: #todo.
 	html
 		html:
 			'
-  <body class="mdc-typography">
-    <header class="mdc-toolbar mdc-toolbar--fixed demo-header-toolbar">
-      <div class="mdc-toolbar__row">
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-          <span class="catalog-back">
-            <a href="/" class="mdc-toolbar__icon--menu"><i class="material-icons">&#xE5C4;</i></a>
-          </span>
-          <span class="mdc-toolbar__title catalog-title">Toolbar</span>
-        </section>
-      </div>
-    </header>
     <main class="mdc-toolbar-fixed-adjust">
       <div class="hero">
         <div class="catalog-toolbar-container">
@@ -48,14 +38,14 @@ renderContentOn: html
       <section class="examples">
         <div class="example">
           <h2>Normal Toolbar <button type="button" onclick="toggleRTL(0)">Toggle RTL</button></h2>
-          <p><a href="./default-toolbar.html" target="_blank">View in separate window</a></p>
-          <iframe class="demo-container" src="./default-toolbar.html" width="320" height="600"></iframe>
+          <p><a href="./', MDDefaultToolbarScreenDemo applicationName ,'" target="_blank">View in separate window</a></p>
+          <iframe class="demo-container" src="./', MDDefaultToolbarScreenDemo applicationName ,'" width="320" height="600"></iframe>
         </div>
 
         <div class="example">
           <h2>Fixed Toolbar<button type="button" onclick="toggleRTL(1)">Toggle RTL</button></h2>
-          <p><a href="./fixed-toolbar.html" target="_blank">View in separate window</a></p>
-          <iframe class="demo-container" src="./fixed-toolbar.html" width="320" height="600"></iframe>
+          <p><a href="./', MDFixedToolbarScreenDemo applicationName ,'" target="_blank">View in separate window</a></p>
+          <iframe class="demo-container" src="./', MDFixedToolbarScreenDemo applicationName ,'" width="320" height="600"></iframe>
         </div>
 
         <div class="example">

@@ -1,5 +1,6 @@
 rendering
-renderContentOn: html
+renderDemoContentOn: html
+	self flag: #todo.
 	html
 		html:
 			'<header class="mdc-toolbar mdc-toolbar--fixed">
@@ -374,4 +375,3 @@ renderContentOn: html
       })();
     </script>
 '"
-	html initMaterialDesignComponents

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "CyrilFerlicot 8/21/2017 00:42",
+	"super" : "WAAnchorTag",
+	"category" : "MaterialDesign-Components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MDDivTag",
+	"type" : "normal"
+}
