@@ -16,39 +16,30 @@ renderDemoContentOn: html
             </div>
           </div>
           <label for="toggle-dark" id="toggle-dark-label">Dark Theme</label>
-        </div>
-
-        <h1 class="mdc-typography--display2">Ripple Enabled</h1>
-        <fieldset>
-          <legend class="mdc-typography--title">Text Button</legend>'.
-			self renderButtonsOn: html.
+        </div>'.
+			html heading
+				mdTypographyDisplay2;
+				with: 'Ripple Enabled'.
 			html
-				html:
-					'
-        </fieldset>
-
-        <fieldset>
-          <legend class="mdc-typography--title">Raised Button</legend>'.
-			self renderRaisedButtonsOn: html.
+				fieldSet: [ html legend
+						mdTypographyTitle;
+						with: 'Text Button'.
+					self renderButtonsOn: html ].
 			html
-				html:
-					'
-        </fieldset>
-
-        <h1 class="mdc-typography--display2">CSS Only</h1>
-        <fieldset>
-          <legend class="mdc-typography--title">Text Button</legend>'.
-			self renderCSSOnlyButtonsOn: html.
+				fieldSet: [ html legend
+						mdTypographyTitle;
+						with: 'Raised Button'.
+					self renderRaisedButtonsOn: html ].
+			html heading
+				mdTypographyDisplay2;
+				with: 'CSS Only'.
 			html
-				html:
-					'
-        </fieldset>
-
-        <fieldset>
-          <legend class="mdc-typography--title">Raised Button</legend>'.
-			self renderCSSOnlyRaisedButtonsOn: html.
+				fieldSet: [ html legend
+						mdTypographyTitle;
+						with: 'Text Button'.
+					self renderCSSOnlyButtonsOn: html ].
 			html
-				html:
-					'
-        </fieldset>
-' ]
+				fieldSet: [ html legend
+						mdTypographyTitle;
+						with: 'Raised Button'.
+					self renderCSSOnlyRaisedButtonsOn: html ] ]
