@@ -1,19 +1,24 @@
 hooks
 style
-	^ 'fieldset {
-        margin: 24px;
-        margin-top: 0;
-        margin-bottom: 16px;
+	^ '.demo-wrapper {
+        padding-bottom: 100px;
       }
-      fieldset .mdc-button {
-        margin: 16px;
-      }
-      .mdc-theme--dark fieldset, .section-dark-theme fieldset {
+
+      .demo-wrapper.mdc-theme--dark{
         background-color: #333;
       }
 
-      .mdc-theme--dark fieldset legend, .section-dark-theme fieldset legend {
+      .demo-wrapper.mdc-theme--dark fieldset legend, .demo-wrapper.mdc-theme--dark h1 {
         color: #f0f0f0;
+      }
+
+      fieldset {
+        padding: 24px;
+        padding-top: 0;
+        padding-bottom: 16px;
+      }
+      fieldset .mdc-button {
+        margin: 16px;
       }
 
       .hero button {
@@ -24,6 +29,16 @@ style
       fieldset legend {
         display: block;
         padding: 16px;
-        padding-top: 64px;
+        padding-top: 48px;
         padding-bottom: 24px;
-      }'
+      }
+      h1 {
+        padding-left: 36px;
+        padding-top: 64px;
+        padding-bottom: 8px;
+      }
+
+      .mdc-form-field {
+        margin: 50px 0 -20px 30px;
+      }
+'

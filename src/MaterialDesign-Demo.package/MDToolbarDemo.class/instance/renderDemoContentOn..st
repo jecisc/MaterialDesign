@@ -1,6 +1,7 @@
 rendering
 renderDemoContentOn: html
 	self flag: #todo.
+	self flag: #todo. "v0.18.0 add toolbar with menus"
 	html
 		html:
 			'<div class="intro">

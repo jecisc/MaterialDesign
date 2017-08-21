@@ -4,8 +4,8 @@ sassdemoSassContent
 
 // Base style
 
-$mdc-theme-primary: #212121 !default
-$mdc-theme-accent: #64dd17 !default
+$mdc-theme-primary: #212121 !default; // Grey 900
+$mdc-theme-secondary: #64dd17 !default; // Light Green A700
 
 body
   font-family: Roboto, Helvetica, Arial, sans-serif

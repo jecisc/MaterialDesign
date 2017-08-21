@@ -1,7 +1,7 @@
 rendering
 renderOptionalScriptsOn: html
 	super renderOptionalScriptsOn: html.
-	 "<script>
+	html script: '
       // Because we load our CSS via webpack, we need to ensure that all of the correct styles
       // are applied before ripples are attached. Otherwise, ripples may use the computed styles of
       // elements before our CSS is applied, leading to improper UX.
@@ -20,5 +20,13 @@ renderOptionalScriptsOn: html
             mdc.ripple.MDCRipple.attachTo(btn);
           }
         }
-      })();
-    </script>"
+
+        var demoWrapper = document.querySelector(''.demo-wrapper'');
+        document.getElementById(''toggle-dark'').addEventListener(''change'', function () {
+          if (this.checked) {
+            demoWrapper.classList.add(''mdc-theme--dark'');
+          } else {
+            demoWrapper.classList.remove(''mdc-theme--dark'');
+          }
+        });
+      })();'
