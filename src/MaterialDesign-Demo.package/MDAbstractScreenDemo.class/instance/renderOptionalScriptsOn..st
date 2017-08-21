@@ -1,0 +1,3 @@
+rendering
+renderOptionalScriptsOn: html
+	html initMaterialDesignComponents

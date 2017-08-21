@@ -3,27 +3,7 @@ renderDemoContentOn: html
 	self flag: #todo.
 	html
 		html:
-			'
-    <main class="mdc-toolbar-fixed-adjust">
-      <div class="hero">
-        <div class="catalog-toolbar-container">
-          <header class="mdc-toolbar">
-            <div class="mdc-toolbar__row">
-              <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-                <i class="material-icons mdc-toolbar__icon--menu">menu</i>
-                <span class="mdc-toolbar__title">Toolbar</span>
-              </section>
-              <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
-                <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Download" alt="Download">file_download</a>
-                <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Print this page" alt="Print this page">print</a>
-                <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Bookmark this page" alt="Bookmark this page">more_vert</a>
-              </section>
-            </div>
-          </header>
-        </div>
-      </div>
-
-      <div class="intro">
+			'<div class="intro">
        <p>
         To best show the functionality of toolbars, we put both demos in iframes.
         Click the links above the iframe to view the demo in a full browser window.
@@ -38,14 +18,22 @@ renderDemoContentOn: html
       <section class="examples">
         <div class="example">
           <h2>Normal Toolbar <button type="button" onclick="toggleRTL(0)">Toggle RTL</button></h2>
-          <p><a href="./', MDDefaultToolbarScreenDemo applicationName ,'" target="_blank">View in separate window</a></p>
-          <iframe class="demo-container" src="./', MDDefaultToolbarScreenDemo applicationName ,'" width="320" height="600"></iframe>
+          <p><a href="./' , MDDefaultToolbarScreenDemo applicationName
+				,
+					'" target="_blank">View in separate window</a></p>
+          <iframe class="demo-container" src="./' , MDDefaultToolbarScreenDemo applicationName
+				,
+					'" width="320" height="600"></iframe>
         </div>
 
         <div class="example">
           <h2>Fixed Toolbar<button type="button" onclick="toggleRTL(1)">Toggle RTL</button></h2>
-          <p><a href="./', MDFixedToolbarScreenDemo applicationName ,'" target="_blank">View in separate window</a></p>
-          <iframe class="demo-container" src="./', MDFixedToolbarScreenDemo applicationName ,'" width="320" height="600"></iframe>
+          <p><a href="./' , MDFixedToolbarScreenDemo applicationName
+				,
+					'" target="_blank">View in separate window</a></p>
+          <iframe class="demo-container" src="./' , MDFixedToolbarScreenDemo applicationName
+				,
+					'" width="320" height="600"></iframe>
         </div>
 
         <div class="example">
@@ -78,13 +66,4 @@ renderDemoContentOn: html
           <iframe class="demo-container" src="./waterfall-flexible-toolbar-custom-style.html" width="320" height="600"></iframe>
         </div>
 
-      </section>
-    </main>
-    <script>
-      function toggleRTL(iframe_number) {
-        var iframeMainEl = document.querySelectorAll(''iframe'')[iframe_number].contentWindow.document.querySelector(''body'');
-        iframeMainEl.getAttribute(''dir'') === ''rtl'' ? iframeMainEl.setAttribute(''dir'', ''ltr'') : iframeMainEl.setAttribute(''dir'', ''rtl'');
-      }
-    </script>
-'.
-	html initMaterialDesignComponents
+      </section>'.

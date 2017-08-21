@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "CyrilFerlicot 8/21/2017 22:08",
+	"super" : "WATagBrush",
+	"category" : "MaterialDesign-Components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MDToolbarTitle",
+	"type" : "normal"
+}

@@ -4,5 +4,10 @@ renderContentOn: html
 	(html tag: 'body')
 		class: #'mdc-typography';
 		with: [ self renderHeaderOn: html.
-			self renderDemoContentOn: html ].
-	html initMaterialDesignComponents
+			html main
+				mdToolbarFixedContent;
+				with: [ html section
+						class: #hero;
+						with: [ self renderHeroContentOn: html ].
+					self renderDemoContentOn: html ].
+			self renderOptionalScriptsOn: html ]

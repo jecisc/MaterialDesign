@@ -1,13 +1,6 @@
 rendering
 renderDemoContentOn: html
 	self flag: #todo.
-	html
-		html:
-			'<main class="mdc-toolbar-fixed-adjust">'.
-	html section
-		class: #hero;
-		with:
-				[ self renderHeroContentOn: html ].
 	html section
 		with: [ html
 				html:
@@ -338,30 +331,4 @@ renderDemoContentOn: html
           <div class="mdc-button mdc-button--theme-dark  mdc-button--raised" tabindex="0" role="button">
             Div
           </div>
-        </fieldset>' ].
-	html
-		html:
-			'</main>
-<script src="/files/MDLibrary/js/material-components-web.min.js" charset="utf-8"></script>'.	"
- <script>
-      // Because we load our CSS via webpack, we need to ensure that all of the correct styles
-      // are applied before ripples are attached. Otherwise, ripples may use the computed styles of
-      // elements before our CSS is applied, leading to improper UX.
-      (function() {
-        var pollId = 0;
-        pollId = setInterval(function() {
-          var pos = getComputedStyle(document.querySelector(''.mdc-button'')).position;
-          if (pos === ''relative'') {
-            init();
-            clearInterval(pollId);
-          }
-        }, 250);
-        function init() {
-          var btns = document.querySelectorAll(''.mdc-button:not([data-demo-no-js])'');
-          for (var i = 0, btn; btn = btns[i]; i++) {
-            mdc.ripple.MDCRipple.attachTo(btn);
-          }
-        }
-      })();
-    </script>
-'"
+        </fieldset>' ]
