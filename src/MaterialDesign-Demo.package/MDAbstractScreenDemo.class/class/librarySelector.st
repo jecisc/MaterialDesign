@@ -1,0 +1,3 @@
+accessing
+librarySelector
+	^ self subclassResponsibility
