@@ -4,10 +4,6 @@ renderRaisedButtonsOn: html
 		div: [ html mdButton
 				raised;
 				with: 'Baseline'.
-			html mdAnchor
-				raised;
-				url: 'javascript:void(0);';
-				with: 'Link'.
 			html mdButton
 				raised;
 				compact;
@@ -18,13 +14,13 @@ renderRaisedButtonsOn: html
 				with: 'Dense'.
 			html mdButton
 				raised;
-				disabled;
-				with: 'Disabled'.
-			html mdButton
-				raised;
 				primaryColor;
 				with: 'Primary'.
 			html mdButton
 				raised;
 				accentColor;
-				with: 'Accent' ]
+				with: 'Accent'.
+			html mdAnchor
+				raised;
+				url: 'javascript:void(0);';
+				with: 'Link' ]

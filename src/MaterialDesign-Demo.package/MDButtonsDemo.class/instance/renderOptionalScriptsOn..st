@@ -29,4 +29,9 @@ renderOptionalScriptsOn: html
             demoWrapper.classList.remove(''mdc-theme--dark'');
           }
         });
+
+ document.getElementById(''toggle-disabled'').addEventListener(''change'', function () {
+          var isDisabled = this.checked;
+          [].slice.call(document.querySelectorAll(''button'')).forEach(button => button.disabled = isDisabled);
+        });
       })();'
