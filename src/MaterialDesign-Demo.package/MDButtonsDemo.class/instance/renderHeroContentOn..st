@@ -6,4 +6,8 @@ renderHeroContentOn: html
 	html mdButton
 		raised;
 		primaryColor;
-		with: 'Raised'
+		with: 'Raised'.
+		
+	html small 
+		class: #note; 
+		with: 'Note: "secondary" was previously called "accent" in the Material spec.'

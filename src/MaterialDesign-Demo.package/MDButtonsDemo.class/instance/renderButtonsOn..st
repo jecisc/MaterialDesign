@@ -13,7 +13,7 @@ renderButtonsOn: html
 				with: 'Primary'.
 			html mdButton
 				accentColor;
-				with: 'Accent'.
+				with: 'Secondary'.
 			html mdAnchor
 				url: 'javascript:void(0);';
 				with: 'Link' ]

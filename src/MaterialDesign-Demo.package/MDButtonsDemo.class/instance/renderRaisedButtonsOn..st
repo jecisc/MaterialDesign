@@ -19,7 +19,7 @@ renderRaisedButtonsOn: html
 			html mdButton
 				raised;
 				accentColor;
-				with: 'Accent'.
+				with: 'Secondary'.
 			html mdAnchor
 				raised;
 				url: 'javascript:void(0);';

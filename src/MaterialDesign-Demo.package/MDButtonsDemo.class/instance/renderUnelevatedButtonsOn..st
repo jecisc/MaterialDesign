@@ -1,26 +1,26 @@
 rendering
-renderCSSOnlyButtonsOn: html
+renderUnelevatedButtonsOn: html
 	html
 		div: [ html mdButton
-				attributeAt: 'data-demo-no-js' put: '';
+				unelevated;
 				with: 'Baseline'.
 			html mdButton
-				attributeAt: 'data-demo-no-js' put: '';
+				unelevated;
 				compact;
 				with: 'Compact'.
 			html mdButton
-				attributeAt: 'data-demo-no-js' put: '';
+				unelevated;
 				dense;
 				with: 'Dense'.
 			html mdButton
-				attributeAt: 'data-demo-no-js' put: '';
+				unelevated;
 				primaryColor;
 				with: 'Primary'.
 			html mdButton
-				attributeAt: 'data-demo-no-js' put: '';
+				unelevated;
 				accentColor;
 				with: 'Secondary'.
 			html mdAnchor
-				attributeAt: 'data-demo-no-js' put: '';
+				unelevated;
 				url: 'javascript:void(0);';
 				with: 'Link' ]

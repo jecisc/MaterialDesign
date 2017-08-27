@@ -32,6 +32,7 @@ style
         padding-top: 48px;
         padding-bottom: 24px;
       }
+
       h1 {
         padding-left: 36px;
         padding-top: 64px;
@@ -40,5 +41,16 @@ style
 
       .mdc-form-field {
         margin: 50px 0 -20px 30px;
+      }
+
+      .hero {
+        position: relative;
+      }
+
+      .hero .note {
+        position: absolute;
+        bottom: 10px;
+        left: 36px;
+        color: rgba(33, 33, 33, .38);
       }
 '
