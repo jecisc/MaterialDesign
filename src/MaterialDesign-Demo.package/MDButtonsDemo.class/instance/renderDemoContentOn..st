@@ -48,6 +48,11 @@ renderDemoContentOn: html
 						mdTypographyTitle;
 						with: 'Unelevated Button'.
 					self renderUnelevatedButtonsOn: html ].
+			html
+				fieldSet: [ html legend
+						mdTypographyTitle;
+						with: 'Stroked Button'.
+					self renderStrokedButtonsOn: html ].
 			html heading
 				mdTypographyDisplay2;
 				with: 'CSS Only'.
@@ -65,4 +70,9 @@ renderDemoContentOn: html
 				fieldSet: [ html legend
 						mdTypographyTitle;
 						with: 'Unelevated Button'.
-					self renderCSSOnlyUnelevatedButtonsOn: html ] ]
+					self renderCSSOnlyUnelevatedButtonsOn: html ].
+			html
+				fieldSet: [ html legend
+						mdTypographyTitle;
+						with: 'Stroked Button'.
+					self renderCSSOnlyStrokedButtonsOn: html ] ]
