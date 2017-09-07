@@ -4,8 +4,12 @@ sassdemoSassContent
 
 // Base style
 
-$mdc-theme-primary: #212121 !default; // Grey 900
-$mdc-theme-secondary: #64dd17 !default; // Light Green A700
+// Grey 900
+$mdc-theme-primary: #212121 !default
+// Light Green A700
+$mdc-theme-secondary: #64dd17 !default
+$low-luminance-color: #3e2723
+$high-luminance-color: #fff8e1
 
 body
   font-family: Roboto, Helvetica, Arial, sans-serif
@@ -70,4 +74,22 @@ ul.catalog-list
 .catalog-component-list-description
   color: #999
   order: 2
+
+.demo-theme-bg--low-luminance
+  background-color: $low-luminance-color
+
+.demo-theme-bg--low-luminance-light
+  background-color: mdc-theme-light-variant($low-luminance-color)
+
+.demo-theme-bg--low-luminance-dark
+  background-color: mdc-theme-dark-variant($low-luminance-color)
+
+.demo-theme-bg--high-luminance
+  background-color: $high-luminance-color
+
+.demo-theme-bg--high-luminance-light
+  background-color: mdc-theme-light-variant($high-luminance-color)
+
+.demo-theme-bg--high-luminance-dark
+  background-color: mdc-theme-dark-variant($high-luminance-color)
 '
